@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KEYRESTUU | Exploit Chad Mode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Onest:wght@300;500;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@3/dist/iconify.min.js"></script>
+  <style>
+    :root {
+      --bg: #0a0015;
+      --accent: #ff00aa;
+      --accent-dark: #c3007f;
+      --cyan: #00ffff;
+      --purple: #a855f7;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: #e0e0ff;
+      font-family: 'JetBrains Mono', monospace;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0015, #1a0030, #30004a);
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(4rem, 15vw, 12rem);
+      font-weight: 900;
+      background: linear-gradient(90deg, #ff00aa, #00ffff, #a855f7, #ff00aa);
+      background-size: 300%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: gradient-flow 8s ease infinite;
+      text-shadow: 0 0 40px rgba(255,0,170,0.7);
+      margin: 1rem 0 3rem;
+    }
+    @keyframes gradient-flow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .glitch {
+      position: relative;
+      animation: glitch-skew 4s infinite;
+    }
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+    .glitch::before {
+      left: 3px;
+      text-shadow: -3px 0 #ff00aa;
+      clip: rect(0, 900px, 0, 0);
+      animation: glitch-anim 2s infinite linear alternate-reverse;
+    }
+    .glitch::after {
+      left: -3px;
+      text-shadow: 3px 0 #00ffff;
+      clip: rect(0, 900px, 0, 0);
+      animation: glitch-anim2 3s infinite linear alternate-reverse;
+    }
+    @keyframes glitch-anim {
+      0% { clip: rect(30px, 9999px, 90px, 0); transform: skew(0.5deg); }
+      5% { clip: rect(10px, 9999px, 60px, 0); transform: skew(-0.8deg); }
+      100% { clip: rect(80px, 9999px, 20px, 0); transform: skew(0.2deg); }
+    }
+    @keyframes glitch-anim2 {
+      0% { clip: rect(50px, 9999px, 100px, 0); transform: skew(-0.3deg); }
+      100% { clip: rect(20px, 9999px, 70px, 0); transform: skew(0.6deg); }
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 4rem 0;
+    }
+    .btn {
+      padding: 1.2rem 3rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+      border-radius: 1rem;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid;
+      backdrop-filter: blur(8px);
+    }
+    .btn:hover {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 0 0 60px;
+    }
+    .btn-1 {
+      background: linear-gradient(45deg, #6b21a8, #c026d3);
+      border-color: #d946ef;
+      color: white;
+      box-shadow: 0 0 30px #c026d3;
+    }
+    .btn-1:hover { box-shadow: 0 0 80px #ec4899; }
+    .btn-2 {
+      background: linear-gradient(45deg, #0891b2, #14b8a6);
+      border-color: #22d3ee;
+      color: white;
+      box-shadow: 0 0 30px #06b6d4;
+    }
+    .btn-2:hover { box-shadow: 0 0 80px #67e8f9; }
+    .btn-final {
+      padding: 1.8rem 5rem;
+      font-size: 2.8rem;
+      background: linear-gradient(135deg, #991b1b, #581c87, #1e293b);
+      border-color: #ef4444;
+      color: #ffcccc;
+      box-shadow: 0 0 50px #ef4444;
+      animation: pulse-final 4s infinite;
+      margin-top: 6rem;
+    }
+    .btn-final:hover {
+      transform: scale(1.12);
+      box-shadow: 0 0 120px #f87171;
+    }
+    @keyframes pulse-final {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+    footer {
+      margin-top: 8rem;
+      padding: 2rem;
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="glitch" data-text="KEYRESTUU">KEYRESTUU</h1>
+    
+    <p style="font-size: 2rem; margin-bottom: 4rem; opacity: 0.9;">
+      exploit chad • scripts drop • pwn since 2025
+    </p>
+
+    <div class="buttons">
+      <!-- Botón 1: Pt2 video -->
+      <a href="https://youtu.be/aY3UFNOsIEw?si=2bkhO3EndCHWdkcb" target="_blank" class="btn btn-1">
+        <iconify-icon icon="mdi:youtube" style="font-size: 2.5rem; margin-right: 1rem;"></iconify-icon>
+        BOTÓN 1 → Pt2 Exploit
+      </a>
+
+      <!-- Botón 2: Canal Gael scripts -->
+      <a href="https://youtube.com/@gael09salgado" target="_blank" class="btn btn-2">
+        <iconify-icon icon="mdi:youtube" style="font-size: 2.5rem; margin-right: 1rem;"></iconify-icon>
+        BOTÓN 2 → Gael Scripts
+      </a>
+    </div>
+
+    <!-- Botón final LINK SES (abajo del todo) -->
+    <a href="https://pastefy.app/jYvrbAJS" target="_blank" class="btn btn-final glitch" data-text="LINK SES">
+      LINK SES →
+    </a>
+
+    <footer>
+      keyrestuu | gael08 | Manteca CA → 2026 vibe
+    </footer>
+  </div>
+
+</body>
+</html>
